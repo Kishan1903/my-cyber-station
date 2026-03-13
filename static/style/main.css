@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root { --primary: #00ff41; --bg: #0a0a0c; --card: #121216; }
+
+body { background: var(--bg); margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; font-family: 'Poppins', sans-serif; color: var(--primary); }
+
+.terminal-box { background: var(--card); border: 1px solid rgba(0, 255, 65, 0.2); border-radius: 12px; width: 550px; padding: 25px; box-shadow: 0 15px 50px rgba(0,0,0,0.9); }
+
+h1 { text-align: center; color: #fff; letter-spacing: 2px; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 1px solid #222; padding-bottom: 12px; font-family: 'Orbitron', sans-serif; }
+
+/* --- BIG SCROLLBAR TABS --- */
+.tabs-container { 
+    display: flex; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    gap: 10px; 
+    padding-bottom: 15px; 
+    margin-bottom: 20px; 
+}
+
+/* Scrollbar Styling */
+.tabs-container::-webkit-scrollbar { height: 10px; display: block; }
+.tabs-container::-webkit-scrollbar-track { background: #1a1a1f; border-radius: 10px; }
+.tabs-container::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; border: 2px solid #000; }
+.tabs-container::-webkit-scrollbar-thumb:hover { background: #fff; }
+
+.tab-btn { background: #1a1a1f; border: 1px solid #333; color: #555; padding: 10px 20px; cursor: pointer; font-size: 0.7rem; border-radius: 4px; font-family: 'Orbitron', sans-serif; flex: 0 0 auto; transition: 0.3s; }
+.tab-btn.active { color: var(--primary); border-color: var(--primary); background: rgba(0, 255, 65, 0.05); }
+
+input, select { width: 100%; padding: 12px; margin-bottom: 15px; background: #000; border: 1px solid #333; border-radius: 6px; color: var(--primary); font-family: 'Poppins', sans-serif; box-sizing: border-box; }
+
+.main-btn { width: 100%; padding: 16px; background: var(--primary); color: #000; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; border-radius: 6px; font-family: 'Orbitron', sans-serif; }
+
+.result-box { margin-top: 20px; padding: 15px; background: #000; border-left: 4px solid var(--primary); position: relative; border-radius: 0 6px 6px 0; }
+.copy-btn { position: absolute; right: 10px; top: 10px; background: var(--primary); border: none; color: #000; font-size: 0.6rem; font-weight: bold; cursor: pointer; padding: 4px 8px; border-radius: 3px; }
+
+.history-item { font-size: 0.75rem; border-bottom: 1px solid #222; padding: 10px 0; color: #ccc; }
